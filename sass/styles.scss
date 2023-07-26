@@ -95,7 +95,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     padding: 5px;
     justify-content: center;
@@ -117,25 +117,25 @@ body {
 }
 
 // Footer
-footer {
+
+.container-footer {
     background-color: $primary-color;
     text-align: center;
     font-size: 15px;
     height: 90px;
     margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 20px;
+    box-sizing: border-box;
 
-    .container-footer {
-        position: fixed;
-        bottom: 0;
+
+    .navbarfooter {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
-        background-color: $primary-color;
-        padding: 20px;
-        box-sizing: border-box;
-
-        .navbarfooter {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
 
         .nav-footerlinks {
             display: flex;
@@ -157,9 +157,8 @@ footer {
                         color: $hover-text-color;
                         }
                     } 
+                }
             }
-        }
-    }
 }
 
 // Redes sociales
