@@ -229,6 +229,29 @@ body {
 
 // Media Queries...
 
+/* pantallas pequeñas */
+@media (max-width: 576px) {
+    .imagen-contenedor,
+    .grid-container,
+    .Formulario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
 /* pantallas medianas */
 @media (min-width: 577px) and (max-width: 768px) {
     .imagen-contenedor {

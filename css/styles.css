@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-nav {
   display: flex;
   padding: 5px;
@@ -91,10 +92,41 @@ body {
 }
 
 .Formulario {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #7ab8c8;
+  border-radius: 8px;
+}
+.Formulario form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
+  flex-direction: column;
+}
+.Formulario form label {
+  margin-bottom: 10px;
+}
+.Formulario form input,
+.Formulario form textarea {
+  width: 100%;
+  max-width: 1000px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.Formulario form textarea {
+  height: 200px;
+}
+.Formulario form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.Formulario form input[type=submit]:hover {
+  background-color: #25a4be;
 }
 
 .container-footer {
@@ -159,6 +191,25 @@ body {
   color: #2e0f94;
 }
 
+/* pantallas pequeñas */
+@media (max-width: 576px) {
+  .imagen-contenedor,
+  .grid-container,
+  .Formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    margin-top: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
 /* pantallas medianas */
 @media (min-width: 577px) and (max-width: 768px) {
   .imagen-contenedor {
