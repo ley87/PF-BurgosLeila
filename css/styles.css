@@ -59,22 +59,22 @@ body {
   border-radius: 40px;
 }
 
-.grid-container {
+.grid-container2, .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  padding: 20px;
+  grid-gap: 5px;
+  padding: 10px;
   justify-items: center;
 }
-.grid-container .item {
-  border: 0px;
+.grid-container2 .item, .grid-container .item {
+  border: 10px;
   grid-column: span 1;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5px;
 }
-.grid-container .item img {
-  width: 80%;
-  height: 80%;
+.grid-container2 .item img, .grid-container .item img {
+  width: 95%;
+  height: 85%;
+  border-radius: 30px;
 }
 
 .container {
@@ -95,30 +95,30 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
-  background-color: #7ab8c8;
+  background-color: #aac7cf;
   border-radius: 8px;
+  display: grid;
+  place-items: center;
+  height: 50vh;
 }
 .Formulario form {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .Formulario form label {
-  margin-bottom: 10px;
+  width: 100%;
 }
 .Formulario form input,
 .Formulario form textarea {
   width: 100%;
-  max-width: 1000px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-bottom: 10px;
 }
 .Formulario form textarea {
   height: 200px;
 }
 .Formulario form input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #4a7593;
   color: white;
   border: none;
   cursor: pointer;
@@ -192,7 +192,7 @@ body {
 }
 
 /* pantallas pequeñas */
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .imagen-contenedor,
   .grid-container,
   .Formulario {
@@ -211,7 +211,7 @@ body {
   }
 }
 /* pantallas medianas */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .imagen-contenedor {
     margin-top: 20px;
   }

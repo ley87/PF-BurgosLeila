@@ -61,6 +61,7 @@ body {
     max-width: 100%;
 }
 
+//IMAGEN HOME
 .imagen-contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -74,26 +75,36 @@ body {
     }
 }
 
-.grid-container {
+// GALERIA DE IMAGENES
+%grid-styles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
+    grid-gap: 05px;
+    padding: 10px;
     justify-items: center;
 
     .item {
-        border: 0px;
+        border: 10px;
         grid-column: span 1;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
 
         img {
-            width: 80%;
-            height: 80%;
+            width: 95%;
+            height: 85%;
+            border-radius: 30px;
         }
     }
 }
 
+.grid-container {
+    @extend %grid-styles;
+}
+
+.grid-container2 {
+    @extend %grid-styles;
+}
+
+//HOME QUIENES SOMOS
 .container {
     max-width: 100%;
     margin: auto;
@@ -109,29 +120,30 @@ body {
     }
 }
 
+// Formulario de contacto
 .Formulario {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-    background-color: #7ab8c8;
+    background-color: #aac7cf;
     border-radius: 8px;
+    display: grid;
+    place-items: center;
+    height: 50vh;
 
     form {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
 
         label {
-            margin-bottom: 10px;
+            width: 100%;
         }
 
         input,
         textarea {
             width: 100%;
-            max-width: 1000px;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            margin-bottom: 10px;
         }
 
         textarea {
@@ -139,7 +151,7 @@ body {
         }
 
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #4a7593;
             color: white;
             border: none;
             cursor: pointer;
@@ -230,7 +242,7 @@ body {
 // Media Queries...
 
 /* pantallas pequeñas */
-@media (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .imagen-contenedor,
     .grid-container,
     .Formulario {
@@ -253,7 +265,7 @@ body {
 }
 
 /* pantallas medianas */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .imagen-contenedor {
         margin-top: 20px;
     }
