@@ -110,11 +110,49 @@ body {
 }
 
 .Formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #7ab8c8;
+    border-radius: 8px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            max-width: 1000px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: #25a4be;
+            }
+        }
+    }
 }
+
 
 // Footer
 
