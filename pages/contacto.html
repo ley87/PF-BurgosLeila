@@ -19,13 +19,21 @@
 <body>
     <!--Navbar-->
     <header class="container-nav">
-        <nav class="navbar" role="navigation">
-            <a href="#" class="brand"><img src="../img/amorperrito.png" alt="logo amor por los perritos"> </a>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./empresas.html">EMPRESAS DE TRASLADO</a></li>
-                <li><a href="./galeria.html">GALERIA</a></li>
+        <nav class="navbar navbar-expand-md" role="navigation">
+            <a href="#" class="navbar-brand"><img src="./img/amorperrito.png" alt="logo amor por los perritos"> </a>
+            
+        <!-- Botón hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/empresas.html">TRASLADOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">GALERIA</a></li>
             </ul>
+            </div>
         </nav>
     </header>
 
