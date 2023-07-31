@@ -63,15 +63,16 @@ body {
 
 //IMAGEN HOME
 .imagen-contenedor {
-    display: grid;
+    display: flex;
     place-items: center;
     max-width: 100%;
     overflow: hidden;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 
     img {
         border-radius: 40px;
-        width: center;
+        width: 100%;
         height: auto;
     }
 }
@@ -247,6 +248,7 @@ body {
     .grid-container,
     .imagen-contenedor img {
         grid-template-columns: 1fr;
+        width: 100%;
     }
     .Formulario {
         flex-direction: column;
