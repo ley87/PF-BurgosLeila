@@ -1,0 +1,44 @@
+// Barra de navegacion Header
+.container-nav {
+    display: flex;
+    padding: 5px;
+    height: 140px;
+    background-color: $primary-color;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        li {
+            > a {
+                padding: 8px 24px;
+                color: rgb(6, 3, 3);
+                text-decoration: none;
+                align-items: center;
+                display: inline-block;
+
+                &:hover {
+                    transform: scale($hover-scale);
+                    background-color: $hover-background-color;
+                    color: $hover-text-color;
+                    }
+                }
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

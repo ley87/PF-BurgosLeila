@@ -1,0 +1,43 @@
+// Footer
+
+.container-footer {
+    background-color: $primary-color;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+    .navbarfooter {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .nav-footerlinks {
+            display: flex;
+            align-items: center;
+            }
+
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+
+                > a {
+                    padding: 8px 24px;
+                    color: rgb(6, 3, 3);
+                    text-decoration: none;
+
+                    &:hover {
+                        transform: scale($hover-scale);
+                        background-color: $hover-background-color;
+                        color: $hover-text-color;
+                        }
+                    } 
+                }
+            }
+}
